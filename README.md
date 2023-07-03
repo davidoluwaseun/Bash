@@ -1,39 +1,40 @@
-Task: Uploading Bash Script to GitHub
-Task Name: Upload Bash Script to GitHub
+Task: Implement RESTCONF API Calls in Bash
+Task Name: Implement RESTCONF API Calls in Bash
 
 Task Preparation
-Before performing the task, I make sure of the following:
+To perform this task, you need to ensure the following:
 
-A local Linux environment set up.
-A script file (e.g., script.sh or script.py) that I want to upload to GitHub.
-A GitHub account.
+Have access to a network device that supports RESTCONF API.
+Install cURL on your Linux machine (if not already installed) using the package manager for your distribution.
 
 Task Implementation
-To implement this task, I follow these steps:
+To implement the RESTCONF API calls in Bash, I followed these steps:
 
-Open the terminal in your Linux environment.
-Create a new file using a text editor and save your script in it.
-Create a new repository on GitHub, giving it an appropriate name and optional description.
-Initialize Git in my local environment using the command git init.
-Connect Git to your GitHub repository using the command git remote add origin git@github.com:davidoluwaseun/Bash.git 
-Added the script file and README.md to the Git repository using the commands git add script.sh (replace with your script file's name) and git add README.md.
-Commit the changes using the command git commit -m "Add script file and README".
-Push the local repository to GitHub using the command git push origin master.
-
+Create a bash script file.
+Define the necessary variables, such as the IP address of the host, RESTCONF credentials, data format, and interface details.
+Construct the REST API URLs for PUT and GET requests.
+Set the headers and authentication for the requests.
+Prepare the payload data for the PUT request.
+Make the PUT request using cURL and capture the status code.
+Make the GET request using cURL and capture the status code and interface information.
+Output the results.
 
 Task Troubleshooting
-Problems encountered during the task, I following the troubleshooting steps:
+Following troubleshooting steps:
 
-I double-check that I have a working internet connection.
-I verify that I have correctly set up Git and connected it to your GitHub account.
-I ensure that the repository URL provided is correct.
+I checked the connectivity to the host and ensure it is reachable from your Linux machine.
+I verify the correctness of the RESTCONF credentials and API URLs.
+Ensure cURL is installed and accessible from the command line.
+Validate the payload data format and structure for the PUT request.
+Inspect any error messages or status codes returned by the API calls for debugging.
 
 Task Verification
-To verify the quality of the result:
+Verified the quality of the result, follow these steps:
 
-I visited your GitHub repository and confirm that the script file and README.md are present.
-Review the README.md file to ensure that it contains the necessary information and follows the provided structure.
-Test the script file by running it in your local Linux environment to ensure it performs as expected.
+Run the bash script.
+Check the generated check_restconf_api.txt file for the output.
+Ensure that the output includes the current date, start and end markers, status codes, and interface information.
+Compare the obtained results with the expected behavior of the RESTCONF API.
 
 
 # Bash
